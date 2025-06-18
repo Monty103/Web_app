@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaX - Read Comics, Novels & Manga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <button id="sidebarToggle" class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1 class="site-title">MangaX</h1>
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#bookmarks"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                <li><a href="#login"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="home" class="active-section">
+            <!-- Featured Content Section -->
+            <div class="featured-section">
+                <h2>Featured Content</h2>
+                <div class="featured-gallery">
+                    <button class="scroll-btn left"><i class="fas fa-chevron-left"></i></button>
+                    <div class="featured-container">
+                        <div class="featured-item">
+                            <img src="https://via.placeholder.com/300x400" alt="Featured Comic 1">
+                            <div class="featured-overlay">
+                                <h3>One Piece</h3>
+                                <p>Epic pirate adventure</p>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <img src="https://via.placeholder.com/300x400" alt="Featured Comic 2">
+                            <div class="featured-overlay">
+                                <h3>Naruto</h3>
+                                <p>Ninja world saga</p>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <img src="https://via.placeholder.com/300x400" alt="Featured Comic 3">
+                            <div class="featured-overlay">
+                                <h3>Dragon Ball</h3>
+                                <p>Super Saiyan battles</p>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <img src="https://via.placeholder.com/300x400" alt="Featured Comic 4">
+                            <div class="featured-overlay">
+                                <h3>Bleach</h3>
+                                <p>Soul reaper chronicles</p>
+                            </div>
+                        </div>
+                        <div class="featured-item">
+                            <img src="https://via.placeholder.com/300x400" alt="Featured Comic 5">
+                            <div class="featured-overlay">
+                                <h3>Attack on Titan</h3>
+                                <p>Humanity's last stand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Popular Section -->
+            <div class="popular-section">
+                <h2>Popular (Most Liked)</h2>
+                <div class="popular-grid">
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 1">
+                        <div class="popular-info">
+                            <h3>My Hero Academia</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 2">
+                        <div class="popular-info">
+                            <h3>Demon Slayer</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 3">
+                        <div class="popular-info">
+                            <h3>Jujutsu Kaisen</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 4">
+                        <div class="popular-info">
+                            <h3>Spy x Family</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 5">
+                        <div class="popular-info">
+                            <h3>Chainsaw Man</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://via.placeholder.com/200x280" alt="Popular 6">
+                        <div class="popular-info">
+                            <h3>One Punch Man</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Updates Section -->
+            <div class="updates-section">
+                <h2>New Updates</h2>
+                <div class="updates-list">
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 1">
+                        <div class="update-details">
+                            <h3>Black Clover</h3>
+                            <p class="story-desc">A young boy named Asta dreams of becoming the Wizard King, the strongest mage in the kingdom. Despite being born without magic, he never gives up on his dream.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 367</span>
+                                    <span class="chapter">Chapter 366</span>
+                                    <span class="chapter">Chapter 365</span>
+                                    <span class="chapter">Chapter 364</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 2">
+                        <div class="update-details">
+                            <h3>Fairy Tail</h3>
+                            <p class="story-desc">Lucy Heartfilia joins the Fairy Tail guild and teams up with Natsu Dragneel, a fire-breathing wizard, on various magical adventures.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 545</span>
+                                    <span class="chapter">Chapter 544</span>
+                                    <span class="chapter">Chapter 543</span>
+                                    <span class="chapter">Chapter 542</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 3">
+                        <div class="update-details">
+                            <h3>Hunter x Hunter</h3>
+                            <p class="story-desc">Gon Freecss embarks on a journey to become a Hunter and find his father, encountering friends and enemies along the way.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 401</span>
+                                    <span class="chapter">Chapter 400</span>
+                                    <span class="chapter">Chapter 399</span>
+                                    <span class="chapter">Chapter 398</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 4">
+                        <div class="update-details">
+                            <h3>Tokyo Ghoul</h3>
+                            <p class="story-desc">Kaneki Ken becomes a half-ghoul after a chance encounter and must navigate the dangerous world of humans and flesh-eating ghouls.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 143</span>
+                                    <span class="chapter">Chapter 142</span>
+                                    <span class="chapter">Chapter 141</span>
+                                    <span class="chapter">Chapter 140</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 5">
+                        <div class="update-details">
+                            <h3>Death Note</h3>
+                            <p class="story-desc">Light Yagami finds a mysterious notebook that allows him to kill anyone whose name he writes in it, leading to a battle of wits with detective L.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 108</span>
+                                    <span class="chapter">Chapter 107</span>
+                                    <span class="chapter">Chapter 106</span>
+                                    <span class="chapter">Chapter 105</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 6">
+                        <div class="update-details">
+                            <h3>Fullmetal Alchemist</h3>
+                            <p class="story-desc">Edward and Alphonse Elric use alchemy to try to bring their mother back to life, but the experiment goes horribly wrong.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 108</span>
+                                    <span class="chapter">Chapter 107</span>
+                                    <span class="chapter">Chapter 106</span>
+                                    <span class="chapter">Chapter 105</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 7">
+                        <div class="update-details">
+                            <h3>Code Geass</h3>
+                            <p class="story-desc">Lelouch vi Britannia gains the power of Geass and leads a rebellion against the Holy Britannian Empire to avenge his mother and create a better world.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 25</span>
+                                    <span class="chapter">Chapter 24</span>
+                                    <span class="chapter">Chapter 23</span>
+                                    <span class="chapter">Chapter 22</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 8">
+                        <div class="update-details">
+                            <h3>Steins;Gate</h3>
+                            <p class="story-desc">Rintaro Okabe accidentally discovers a way to send messages to the past, leading to a complex story of time travel and its consequences.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 12</span>
+                                    <span class="chapter">Chapter 11</span>
+                                    <span class="chapter">Chapter 10</span>
+                                    <span class="chapter">Chapter 9</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 9">
+                        <div class="update-details">
+                            <h3>Re:Zero</h3>
+                            <p class="story-desc">Subaru Natsuki is transported to a fantasy world where he discovers he has the ability to return to a checkpoint in time when he dies.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 89</span>
+                                    <span class="chapter">Chapter 88</span>
+                                    <span class="chapter">Chapter 87</span>
+                                    <span class="chapter">Chapter 86</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 10">
+                        <div class="update-details">
+                            <h3>Overlord</h3>
+                            <p class="story-desc">Momonga, a powerful wizard and guild master, finds himself trapped in a virtual world that has become reality, and he must navigate this new world.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 67</span>
+                                    <span class="chapter">Chapter 66</span>
+                                    <span class="chapter">Chapter 65</span>
+                                    <span class="chapter">Chapter 64</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 11">
+                        <div class="update-details">
+                            <h3>That Time I Got Reincarnated as a Slime</h3>
+                            <p class="story-desc">Satoru Mikami is reincarnated as a slime in a fantasy world and gains various abilities, leading him to build a nation of monsters.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 98</span>
+                                    <span class="chapter">Chapter 97</span>
+                                    <span class="chapter">Chapter 96</span>
+                                    <span class="chapter">Chapter 95</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 12">
+                        <div class="update-details">
+                            <h3>Konosuba</h3>
+                            <p class="story-desc">Kazuma Satou dies and is given the chance to be reincarnated in a fantasy world, where he forms a dysfunctional party with goddess Aqua and others.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 45</span>
+                                    <span class="chapter">Chapter 44</span>
+                                    <span class="chapter">Chapter 43</span>
+                                    <span class="chapter">Chapter 42</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 13">
+                        <div class="update-details">
+                            <h3>No Game No Life</h3>
+                            <p class="story-desc">Sora and Shiro, a brother-sister duo known as Blank, are transported to a world where everything is decided by games.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 34</span>
+                                    <span class="chapter">Chapter 33</span>
+                                    <span class="chapter">Chapter 32</span>
+                                    <span class="chapter">Chapter 31</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 14">
+                        <div class="update-details">
+                            <h3>Log Horizon</h3>
+                            <p class="story-desc">Thousands of players are trapped in the MMORPG Elder Tale, and they must learn to survive and build a new society in this virtual world.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 78</span>
+                                    <span class="chapter">Chapter 77</span>
+                                    <span class="chapter">Chapter 76</span>
+                                    <span class="chapter">Chapter 75</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <img src="https://via.placeholder.com/120x160" alt="Update 15">
+                        <div class="update-details">
+                            <h3>Sword Art Online</h3>
+                            <p class="story-desc">Kirito and other players are trapped in a virtual reality MMORPG where death in the game means death in real life.</p>
+                            <div class="chapters-container">
+                                <div class="chapters-list">
+                                    <span class="chapter">Chapter 156</span>
+                                    <span class="chapter">Chapter 155</span>
+                                    <span class="chapter">Chapter 154</span>
+                                    <span class="chapter">Chapter 153</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="search" class="hidden-section">
+            <h2>Search</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search comics, manga, or novels...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Comics</button>
+                <button class="filter-btn">Manga</button>
+                <button class="filter-btn">Novels</button>
+            </div>
+        </section>
+
+        <section id="bookmarks" class="hidden-section">
+            <h2>Your Bookmarks</h2>
+            <div class="bookmarks-container">
+                <p>Login to see your bookmarks</p>
+            </div>
+        </section>
+
+        <section id="login" class="hidden-section">
+            <h2>Login</h2>
+            <div class="login-container">
+                <form id="loginForm">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#signup">Sign up</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
